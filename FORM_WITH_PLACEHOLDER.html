@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link href="FORM_WITH_PLACEHOLDER_files/contactForm.css" rel="Stylesheet">
+		<title>FORM_WITH_PLACEHOLDER</title>
+		<style>
+			fieldset{
+				display : block;
+				background-color:yellow;
+				}
+			legend{
+				background-color: blue;
+				color: white;
+				padding : 5px 10px;
+				}
+	
+			form{
+				height: 450px;
+				width: 50%;
+				border-radius: 2px solid #000;
+				display: flex;
+
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				background-color: lightgreen;
+				direction: ltr;
+				margin: auto;
+			}
+				
+			input[type=text]{
+				width: 100%;
+				padding: 2px 1px;
+				margin: 2px 0;
+				display:inline-block;
+				border: 1% solid pink;
+				border-radius: 4px;
+				box-sizing:border-box;;
+			}
+			
+			 div{
+				max-height: 50%;
+				align-content: center;
+				justify-content: center;
+				
+			}
+			.Container{
+				box-sizing: content-box;
+			}
+			
+			</style>
+	</head>
+	<body>
+		<fieldset>
+		<legend>FEEDBACK_FORM</legend>
+		<center><h1> feedback form</h1></center>
+		<center><p style="color: red;">* required fields</p></center>
+		<div class="box">
+		<form>
+      
+		<div class="container">
+						
+            
+			<label>Name:</label>	<input type="text" name="Name" placeholder="please Enter Your Name"><br>
+			
+			<label>Email:</label><input type="text" email="email" placeholder="please Enter Your Email"><br>
+			
+			<label>Website:</label><input type="text" website="url" placeholder="please Enter Website"><br><br>
+			
+			<label for="freeform">Message:</label>
+			<br>
+			<textarea id="freeform" name="freeform" rows="4" cols="50">			</textarea><br><br>
+
+			<br>
+		<input type="reset" name="Clear" value="Clear">
+		<input type="submit" name="submit" value="submit">
+		
+		</div>
+    </form>
+	</div>
+	</fieldset>
+
+</body></html>
